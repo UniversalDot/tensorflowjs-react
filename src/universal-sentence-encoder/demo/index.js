@@ -22,9 +22,12 @@ import * as tf from '@tensorflow/tfjs-core';
 import {interpolateReds} from 'd3-scale-chromatic';
 
 const sentences = [
-  'I like my phone.', 'Your cellphone looks great.', 'How old are you?',
-  'What is your age?', 'An apple a day, keeps the doctors away.',
-  'Eating strawberries is healthy.'
+  'Create react software component that allows users to input personal interests', 
+  'New Substrate pallet that enables sudo access to the network',
+  'Create a poem that describes the way the universe works in a stylish and poetic way',
+  'Train a machine learning model that recommends tasks to profiles with specific interests',
+  'Conduct interviews with business regarding the new way of creating digital contracts',
+  'Grow strawberries and sell then on the market.'
 ];
 
 const init = async () => {
@@ -74,10 +77,10 @@ const init = async () => {
 };
 const initQnA = async () => {
   const input = {
-    queries: ['How are you feeling today?'],
+    queries: ['Create react software component that allows users to input personal interests'],
     responses: [
-      'I\'m not feeling very well.', 'Beijing is the capital of China.',
-      'You have five fingers on your hand.'
+      'react, software, development, web', 'Business, Analysis, Strategy',
+      'Farming, Agriculture'
     ]
   };
   const model = await use.loadQnA();
