@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 import * as tf from '@tensorflow/tfjs';
 import padSequences from './helper/paddedSeq'
@@ -16,7 +16,7 @@ import {
 } from '@material-ui/core'
 import MenuIcon from '@material-ui/icons/Menu';
 import { makeStyles } from '@material-ui/core/styles';
-import { blue } from '@material-ui/core/colors';
+
 
 
 
@@ -75,6 +75,7 @@ async function loadMetadata(url) {
 
 const getSentimentScore =(text) => {
   console.log(text)
+  // eslint-disable-next-line 
   const inputText = text.trim().toLowerCase().replace(/(\.|\,|\!)/g, '').split(' ');
   setTrim(inputText)
   console.log(inputText)
@@ -111,7 +112,7 @@ useEffect(()=>{
     }
   );
 
-},[])
+},[]) // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
 
