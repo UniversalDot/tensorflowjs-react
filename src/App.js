@@ -35,7 +35,8 @@ function App() {
   const classes = useStyles();
 
   const url = {
-
+    // universal-sentance-encoder
+    // model: https://storage.googleapis.com/tfjs-models/savedmodel/universal_sentence_encoder/model.json
     model: 'https://storage.googleapis.com/tfjs-models/tfjs/sentiment_cnn_v1/model.json',
     metadata: 'https://storage.googleapis.com/tfjs-models/tfjs/sentiment_cnn_v1/metadata.json'
 };
