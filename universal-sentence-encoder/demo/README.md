@@ -24,10 +24,10 @@ Build the universal sentence encoder locally which the demo depends on:
 yarn build-deps
 ```
 
-To watch files for changes, and launch a dev server:
+To start a dev server:
 
 ```sh
-yarn watch
+yarn start
 ```
 
 ## If you are developing universal-sentence-encoder locally, and want to test the changes in the demo
